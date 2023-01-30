@@ -8,7 +8,7 @@ var i = 0;
 const crearCopo=()=>{
     let copo=document.createElement("IMG");
     copo.classList.add("copo");
-    copo.setAttribute("src", "/assets/images/copofinal.png")
+    copo.setAttribute("src", "../assets/images/copofinal.png")
     copo.style.cssText=`left:${Math.random()*95}vw;top:5vh`
     copo.addEventListener("animationend",()=>{
         body.removeChild(copo);
