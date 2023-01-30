@@ -1,0 +1,207 @@
+/* ____________________________________Parte del Index */
+.bodycopo{
+    background-color: rgb(112, 112, 112);
+}
+.section__wallpaper {
+    height: 80vh;
+    margin-top: 5vh;
+}
+
+.section__wallpaper>img {
+    height: 100%;
+}
+
+.copo {
+    position: absolute;
+    height: 5vh;
+    animation-name: snoww;
+    animation-duration: 5s;
+    /* animation-fill-mode: backwards; */
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes snoww {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(90vh);
+    }
+}
+
+.launcher {
+    height: 10vh;
+    width: 17vw;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    border-color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.launcher--btn {
+    height: 7vh;
+    width: 12vw;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    border-color: aliceblue;
+    font-size: 1.3rem;
+    animation-name: moverbtn;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moverbtn {
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* ____________________________________Parte de la tienda */
+.start {
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.start>img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.footer {
+    height: 9.2vh;
+}
+
+.tarjetero {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3vw;
+}
+
+.caratula {
+    margin: 1vw;
+    box-shadow: 10px;
+}
+/* ____________________________________Parte de Sobre Nosotros */
+.section__about {
+    display: flex;
+    border: 2px solid wheat;
+    width: 60vw;
+    background-color: rgb(174, 196, 206);
+    margin-left: 10vh;
+    margin-top: 5vh;
+    text-align: center;
+    padding: 3vw;
+}
+
+.section__about>img {
+    max-width: 300px;
+}
+
+.section__about--text {
+    width: 30vw;
+    margin: 1vw;
+}
+
+.about {
+    background-image: url("../assets/images/wall3.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+.second{
+    transform: translateX(-1500px);
+    /* position: absolute;
+    top: 40%;
+    left:-1500px; */
+}
+.third{
+    transform: translateX(-1500px);
+    /* position: absolute;
+    top: 90%;
+    left:-1500px; */
+}
+.mov{
+    animation-name: movabout;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes movabout {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+/* ____________________________________Parte de Contact */
+.form {
+    width: 50vw;
+    border: 1px solid black;
+    background-color: rgb(168, 198, 217);
+    margin-top: 5vh;
+    padding: 2%;
+    
+}
+
+.contact {
+    background-image: url("../assets/images/wallcontact.gif");
+}
+.ayuda{
+    background-image: url("../assets/images/bicho.png");
+    background-repeat: no-repeat;
+    background-color: rgb(117, 117, 248);
+    text-align: center;
+}
+
+.box{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+}
+.subrayado{
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 1rem;
+    text-align: center;
+}
+.arrowanimation{
+    height: 2vw;
+}
+.help{
+    margin: 1rem;
+}
+.help:hover img{
+    animation-name: movarrow;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+@keyframes movarrow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.7);
+    }
+}
